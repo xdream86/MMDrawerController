@@ -1,4 +1,31 @@
 #MMDrawerController Changelog
+##[0.6.0](https://github.com/mutualmobile/MMDrawerController/issues?q=milestone%3A0.6.0+is%3Aclosed) (Thursday, April 2, 2015)
+###New
+* **Removed iOS 6 support** ([#350](https://github.com/mutualmobile/MMDrawerController/pull/350))([#356](https://github.com/mutualmobile/MMDrawerController/pull/356)) (Kevin Harwood, podkovyrin)
+* **Migrated from id to instancetype** ([#349](https://github.com/mutualmobile/MMDrawerController/pull/349)) (Kevin Harwood)
+* **Added iPhone 6/6+ support to example project** ([#347](https://github.com/mutualmobile/MMDrawerController/pull/347)) (Kevin Harwood)
+* **Added new properties for Shadow Radius, Shadow Opacity, Shadow Offset, Bezel Gesture Size, and Pan Velocity thresholds** Please consult the documentation for additional information. ([#294](https://github.com/mutualmobile/MMDrawerController/pull/294))([#338](https://github.com/mutualmobile/MMDrawerController/pull/338))([#270](https://github.com/mutualmobile/MMDrawerController/pull/270))([#194](https://github.com/mutualmobile/MMDrawerController/pull/194)) (SanggeonPark, lbasile, boherna, MartinMoizard)
+
+###Fixed
+* **FIXED** an issue ([#288](https://github.com/mutualmobile/MMDrawerController/pull/288)) rotation methods were called twice on iOS 8. (arielitovsky)
+* **FIXED** an issue ([#348](https://github.com/mutualmobile/MMDrawerController/pull/348)) where the drawer height was incorrectly set when using a dummy status bar.
+* **FIXED** an issue ([#324](https://github.com/mutualmobile/MMDrawerController/pull/324)) where we called removeFromParentViewController out of order. (long)
+* **FIXED** an issue ([#306](https://github.com/mutualmobile/MMDrawerController/pull/306)) where the podspec incorrectly caused a duplicate reference warning. (klundberg)
+
+##[0.5.7](https://github.com/mutualmobile/MMDrawerController/issues?q=milestone%3A0.5.7+is%3Aclosed) (Monday,  August 25th, 2014)
+###Fixed
+* **FIXED** an issue ([#271](https://github.com/mutualmobile/MMDrawerController/pull/271)) where state restoration would cause multiple calls to viewDidAppear. (pronebird)
+* **FIXED** an issue ([#269](https://github.com/mutualmobile/MMDrawerController/pull/269)) where an internal method name was misnamed. (shoecart)
+
+##[0.5.6](https://github.com/mutualmobile/MMDrawerController/issues?milestone=14&page=1&state=closed) (Monday,  June 9th, 2014)
+###Fixed
+* **FIXED** an issue ([#259](https://github.com/mutualmobile/MMDrawerController/pull/259)) where the side would rarely show up hidden when opening. (Eric Miller, Lars Anderson, Kevin Harwood)
+* **FIXED** an issue ([#251](https://github.com/mutualmobile/MMDrawerController/pull/251)) where the completion block would not be called if you set the new center view controller with a full close animation while the drawer was closed. (ThuggishNuggets)
+* **FIXED** an issue ([#246](https://github.com/mutualmobile/MMDrawerController/pull/246)) where user could interact with content while an animation completed. (jgallagher, Kevin Harwood)
+* **FIXED** an issue ([#232](https://github.com/mutualmobile/MMDrawerController/pull/232)) where the drawer controller was not properly calling willMoveToParentViewController:nil when removing children from the drawer container view controller. (Josh Berlin, Kevin Harwood)
+* **FIXED** an issue ([#222](https://github.com/mutualmobile/MMDrawerController/pull/222)) where a user interacting with during rotation would cause UI glitches. (Kevin Harwood, vkormushkin)
+* **FIXED** an ([#220](https://github.com/mutualmobile/MMDrawerController/pull/220)) where we were setting the background color on the wrong view, which prevented setting a custom background color for the entire view. (Kevin Harwood, David Dulak, trawor)
+
 ##[0.5.5](https://github.com/mutualmobile/MMDrawerController/releases/tag/0.5.5) (Wednesday, April 30, 2014)
 ###Fixed
 * **FIXED** an issue ([#244](https://github.com/mutualmobile/MMDrawerController/pull/244)) where a user could continue to interact with the view while a pan gesture animation was ongoing. (Kevin Harwood, Patrick Hernandez)
